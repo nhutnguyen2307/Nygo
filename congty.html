@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo ban cuoi.png">
+    <title>Nygo - Danh sách các công ty nổi bật</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Be+Vietnam:wght@400;700&family=Beau+Rivage&family=Inter:wght@400;700&display=swap" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/congty.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+    <div class="main-container">
+      <!-- HEADER -->
+        <div id="header-container"></div>
+        <!-- Phần nội dung -->
+        <main class="container py-5">
+            <h2 class="section-title text-center fw-bold mb-5">Danh sách các công ty nổi bật</h2>
+
+            <!-- THANH TÌM KIẾM CÔNG TY (jQuery filter) -->
+            <div class="d-flex justify-content-center mb-4 gap-2 flex-wrap">
+                <input
+                    id="company-search"
+                    type="text"
+                    class="form-control"
+                    placeholder="🔍 Tìm kiếm công ty..."
+                    style="max-width:400px; border-radius:12px; border:1px solid #d0d7f0; font-family:'Be Vietnam Pro',sans-serif; font-size:15px;"
+                />
+                <button id="company-search-btn" class="btn" style="background:linear-gradient(90deg,#2563ff,#7c3aed);color:#fff;border-radius:12px;font-family:'Be Vietnam Pro',sans-serif;font-weight:600;padding:8px 22px;">
+                    Tìm kiếm
+                </button>
+                <button id="company-clear-btn" class="btn btn-outline-secondary" style="border-radius:12px;font-family:'Be Vietnam Pro',sans-serif;font-weight:500;">
+                    Xem tất cả
+                </button>
+            </div>
+            <p id="company-count" class="text-center mb-3" style="font-family:'Be Vietnam Pro',sans-serif;color:#888;font-size:14px;"></p>
+
+            <div class="row g-4" id="company-grid">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="company-card w-100 h-100">
+                    <div class="card-banner" style="background-image: url('img/banner_v.png');"></div>
+                    <div class="company-logo">
+                        <img src="img/vv.png" alt="" style="width: 80%; height: 80%; object-fit: contain;">
+                    </div>
+                        <div class="card-body-content">
+                            <h3 class="company-name">CÔNG TY CỔ PHẦN NGƯỜI BẠN VÀNG</h3>
+                            <p class="company-desc">" Chuỗi cầm đồ toàn quốc Người Bạn Vàng được thành lập từ năm 2017, hoạt động chuyên sâu trong lĩnh vực cầm đồ và kiểm định các tài sản giá trị cao như trang sức, kim cương, túi xách hàng hiệu, đồng hồ cao cấp... Với định hướng minh bạch và chuyên nghiệp, Người Bạn Vàng không ngừng nâng cao chất lượng dịch vụ nhằm mang đến giải pháp..."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="company-card w-100 h-100">
+                    <div class="card-banner" style="background-image: url('img/vvv.png');"></div>
+                    <div class="company-logo">
+                        <img src="img/121.png" alt="" style="width: 80%; height: 80%; object-fit: contain;">
+                    </div>
+                        <div class="card-body-content">
+                            <h3 class="company-name">TẬP ĐOÀN CÔNG NGHIỆP - VIỄN THÔNG QUÂN ĐỘI</h3>
+                            <p class="company-desc">" Tập đoàn Viễn thông Quân đội Viettel - giữ vững vị thế Nơi làm việc tốt nhất Việt Nam trong 05 năm liên tiếp trong ngành Viễn thông, Hạ tầng, IT (theo khảo sát Anphabe) là nhà cung cấp dịch vụ số toàn cầu, luôn đi đầu trong đổi mới sáng tạo và luôn lắng nghe, thấu hiểu để đem tới những dịch vụ tốt nhất cho khách hàng. Viettel..."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="company-card w-100 h-100">
+                    <div class="card-banner" style="background-image: url('img/bann.png');"></div>
+                    <div class="company-logo">
+                        <img src="img/dg.png" alt="" style="width: 80%; height: 80%; object-fit: contain;">
+                    </div>
+                        <div class="card-body-content">
+                            <h3 class="company-name">CÔNG TY TNHH DIGI-TEXX</h3>
+                            <p class="company-desc">" DIGI-TEXX là công ty có 100% vốn đầu tư từ Đức, thành lập vào năm 2002 và chuyên về lĩnh vực CNTT & BPO (gia công quy trình kinh doanh). Chúng tôi có trụ sở chính tại Công viên phần mềm Quang Trung - TP.HCM, các chi nhánh tại Cần Thơ, Hậu Giang và văn phòng đại diện tại Fukuoka, Nhật Bản. Chúng tôi có đội ngũ nhân viên lớn,..."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="company-card w-100 h-100">
+                    <div class="card-banner" style="background-image: url('img/ban_ohvn.png');"></div>
+                    <div class="company-logo">
+                        <img src="img/ohvn.png" alt="" style="width: 80%; height: 80%; object-fit: contain;">
+                    </div>
+                        <div class="card-body-content">
+                            <h3 class="company-name">CÔNG TY CỔ PHẦN OPEN HEALTHCARE VIỆT NAM</h3>
+                            <p class="company-desc">" CÔNG TY CỔ PHẦN OPEN HEALTHCARE VIỆT NAM Open Healthcare Việt Nam được thành lập mang đến dịch vụ K-Medical với mục tiêu chung tay nâng cao sức khỏe người dân Việt Nam, đưa dịch vụ chăm sóc tốt nhất, công nghệ chẩn đoán hàng đầu đến từ Hàn Quốc."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="company-card w-100 h-100">
+                    <div class="card-banner" style="background-image: url('img/banner\ hs.png');"></div>
+                    <div class="company-logo">
+                        <img src="img/11111.jpg" alt="" style="width: 80%; height: 80%; object-fit: contain;">
+                    </div>
+                        <div class="card-body-content">
+                            <h3 class="company-name">CÔNG TY CỔ PHẦN TẬP ĐOÀN HOA SEN</h3>
+                            <p class="company-desc">" Công ty Cổ phần Tập đoàn Hoa Sen được thành lập ngày 08/08/2001 với giá trị cốt lõi "Trung thực - Cộng đồng - Phát triển". Trải qua hơn 24 năm hình thành và phát triển, Tập đoàn Hoa Sen đã vươn mình khẳng định vị thế là doanh nghiệp hàng đầu trong lĩnh vực sản xuất và kinh doanh Tôn - Thép tại Việt Nam; là nhà xuất khẩu..."</p>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div class="company-card w-100 h-100">
+                    <div class="card-banner" style="background-image: url('img/a\ soc\ banner.png');">
+                        </div>
+                    
+                    <div class="company-logo">
+                        <img src="img/a soc.png" alt="" style="width: 80%; height: 80%; object-fit: contain;">
+                    </div>
+
+                    <div class="card-body-content">
+                        <h3 class="company-name">CÔNG TY TNHH A SÓC</h3>
+                        <p class="company-desc">" A Sóc Logistics được thành lập tháng 12 năm 2017, là công ty hàng đầu trong lĩnh vực vận chuyển hàng hóa Bắc Trung Nam. Trải qua nhiều năm phát triển và đổi mới, với đội ngũ quản lý giàu kinh nghiệm, hơn 600 nhân viên năng động, nhiệt huyết, hơn 400 xe cont và tải các loại, 1 xưởng sửa chữa phương tiện cùng hệ thống kho bãi trãi..."</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+            <!-- Dãy nút -->
+            <!-- PHÂN TRANG -->
+            <div class="pagination-container-row">
+                <div class="pagination-left-btns">
+                    <button class="btn-pag-arrow">&laquo;</button>
+                    <button class="btn-pag-num active">1</button>
+                    <button class="btn-pag-num">2</button>
+                    <button class="btn-pag-num">3</button>
+                    <button class="btn-pag-num">4</button>
+                    <button class="btn-pag-arrow">&raquo;</button>
+                </div>
+                <select class="select-per-page">
+                    <option>10/trang</option>
+                    <option>20/trang</option>
+                    <option>50/trang</option>
+                </select>
+            </div>
+    </main>
+        <!-- Lấy Footer -->
+        <div id="footer-container"></div>
+    </div>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Load component -->
+     <script src="js/auth.js"></script>
+     <script src="js/header.js"></script>
+     <script src="js/congty.js"></script>
+     <script>
+  var _navInterval = setInterval(function () {
+    if (document.querySelector(".home-link")) {
+      var page = window.location.pathname.split("/").pop() || "index.html";
+      var map = {
+        "index.html": ".home-link",
+        "": ".home-link",
+        "vieclam.html": ".job-link",
+        "congty.html": ".company-link",
+        "vechungtoi.html": ".about-link"
+      };
+      var el = document.querySelector(map[page]);
+      if (el) el.classList.add("active");
+      clearInterval(_navInterval);
+    }
+  }, 50);
+</script>
+</body>
+</html>

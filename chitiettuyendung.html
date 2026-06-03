@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo ban cuoi.png">
+    <title>Nygo - Chi tiết tuyển dụng</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/chitiettuyendung.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <!-- HEADER -->
+    <div id="header-container"></div>
+
+    <!-- CONTENT -->
+    <main class="container py-5">
+        <div class="row g-4">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-8">
+
+                <!-- Job Header -->
+                <div class="job-detail-card bg-white rounded-4 p-4 border mb-4">
+                    <h2 class="job-title fw-bold mb-4">Senior UX/UI Designer</h2>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <div class="job-info-item">
+                                <i class="fa-solid fa-money-bill text-primary"></i>
+                                <div>
+                                    <small>Mức lương</small>
+                                    <p>$1500 - $2500</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="job-info-item">
+                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                <div>
+                                    <small>Địa điểm</small>
+                                    <p>TP. Hồ Chí Minh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="job-info-item">
+                                <i class="fa-solid fa-briefcase text-primary"></i>
+                                <div>
+                                    <small>Kinh nghiệm</small>
+                                    <p>Trên 3 năm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="job-info-item">
+                                <i class="fa-solid fa-calendar-days text-primary"></i>
+                                <div>
+                                    <small>Hạn nộp</small>
+                                    <p>30/10/2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 d-flex gap-3 flex-wrap">
+                        <button class="btn btn-apply" data-bs-toggle="modal" data-bs-target="#applyModal">
+                            <i class="fa-solid fa-paper-plane me-2"></i>Ứng tuyển ngay
+                        </button>
+                        <button class="btn btn-save" id="btnSave">
+                            <i class="fa-regular fa-heart me-2"></i>Lưu tin
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Job Description -->
+                <div class="content-box bg-white rounded-4 border p-4 mb-4">
+                    <h4 class="section-title">Mô tả công việc</h4>
+                    <p>Chúng tôi đang tìm kiếm một Senior UX/UI Designer tài năng để gia nhập đội ngũ phát triển sản phẩm của FPT. Bạn sẽ chịu trách nhiệm dẫn dắt quá trình thiết kế trải nghiệm người dùng từ giai đoạn nghiên cứu đến khi hoàn thiện giao diện cuối cùng.</p>
+                    <ul>
+                        <li>Thiết kế wireframes, prototypes và hi-fi mockups cho các nền tảng Web & Mobile.</li>
+                        <li>Thực hiện nghiên cứu người dùng, khảo sát và phân tích dữ liệu để tối ưu hóa UX.</li>
+                        <li>Hợp tác chặt chẽ với đội ngũ Product Managers và Developers để hiện thực hóa các giải pháp thiết kế.</li>
+                        <li>Xây dựng và duy trì Design System đồng nhất cho toàn bộ hệ sinh thái sản phẩm.</li>
+                    </ul>
+                </div>
+
+                <!-- Requirements -->
+                <div class="content-box bg-white rounded-4 border p-4 mb-4">
+                    <h4 class="section-title">Yêu cầu công việc</h4>
+                    <ul>
+                        <li>Tối thiểu 3 năm kinh nghiệm làm UX/UI Designer cho các sản phẩm công nghệ (SaaS, E-commerce hoặc Fintech).</li>
+                        <li>Sử dụng thành thạo các công cụ thiết kế: Figma, Adobe Creative Cloud.</li>
+                        <li>Có tư duy về Product Design và am hiểu sâu về Human-Centered Design.</li>
+                        <li>Kỹ năng giao tiếp và làm việc nhóm tốt, có khả năng trình bày ý tưởng thiết kế một cách thuyết phục.</li>
+                        <li>Ưu tiên ứng viên có kinh nghiệm về chuyển động (Interaction/Motion Design).</li>
+                    </ul>
+                </div>
+
+                <!-- Benefits -->
+                <div class="content-box bg-white rounded-4 border p-4">
+                    <h4 class="section-title">Quyền lợi</h4>
+                    <ul>
+                        <li>Môi trường làm việc năng động, sáng tạo và chuyên nghiệp.</li>
+                        <li>Được cung cấp thiết bị làm việc hiện đại (Macbook Pro).</li>
+                        <li>Cơ hội thăng tiến lên các vị trí quản lý (Lead Designer).</li>
+                        <li>Được tham gia các khóa đào tạo chuyên sâu về UI/UX quốc tế.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div class="col-lg-4">
+
+                <!-- Company Card -->
+                <div class="company-card bg-white rounded-4 border p-4 mb-4 text-center">
+                    <img src="img/FPT.png" alt="FPT Logo" class="company-logo mb-3">
+                    <h5 class="fw-bold">FPT</h5>
+                    <p class="text-primary mb-3">Công ty phần mềm</p>
+                    <hr>
+                    <div class="company-meta text-start">
+                        <p><i class="fa-solid fa-users me-2 text-primary"></i>Quy mô: 50-100 nhân viên</p>
+                        <p><i class="fa-solid fa-laptop-code me-2 text-primary"></i>Lĩnh vực: Công nghệ / Phần mềm</p>
+                        <p><i class="fa-solid fa-globe me-2 text-primary"></i><a href="https://fpt.com.vn" target="_blank">https://fpt.com.vn</a></p>
+                    </div>
+                </div>
+
+                <!-- Benefits Card -->
+                <div class="benefit-card bg-white rounded-4 border p-4 mb-4">
+                    <h5 class="fw-bold mb-3">Chế độ đãi ngộ</h5>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon benefit-icon--green">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <div>
+                            <strong>Bảo hiểm sức khỏe</strong>
+                            <p>Gói chăm sóc cao cấp PVI cho nhân viên và người thân</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon benefit-icon--yellow">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div>
+                            <strong>Lương tháng 13++</strong>
+                            <p>Thưởng KPI và hiệu suất cuối năm hấp dẫn</p>
+                        </div>
+                    </div>
+
+                    <div class="benefit-item">
+                        <div class="benefit-icon benefit-icon--orange">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Thời gian linh hoạt</strong>
+                            <p>Giờ làm việc linh hoạt, hỗ trợ Remote 2 ngày/tháng</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="location-card bg-white rounded-4 border p-4">
+                    <h5 class="fw-bold mb-3">Địa điểm làm việc</h5>
+                    <div class="map-embed mb-3">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62715.27096055021!2d106.65718394703669!3d10.757247020093342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175259a067bfa27%3A0x2a35ad30f5a1c989!2zRlBUIFTDom4gVGh14bqtbiAy!5e0!3m2!1svi!2s!4v1780184683248!5m2!1svi!2s"
+                            width="100%" height="160" style="border:0;border-radius:10px;"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                    <p class="mb-0">
+                        <i class="fa-solid fa-location-dot text-primary me-2"></i>
+                        Khu chế xuất Tân Thuận, 29B-31B-33B Tân Thuận, Hồ Chí Minh, Việt Nam
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+
+</div>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Load Header / Footer -->
+<script>
+async function loadComponent(id, file) {
+    try {
+        const response = await fetch(file);
+        const data = await response.text();
+        document.getElementById(id).innerHTML = data;
+    } catch (e) {
+        console.warn('Không thể tải:', file);
+    }
+}
+loadComponent("header-container", "header.html");
+loadComponent("footer-container", "footer.html");
+</script>
+
+<!-- JS -->
+<script src="js/auth.js"></script>
+<script src="js/header.js"></script>
+<script src="js/chitiettuyendung.js"></script>
+
+</body>
+</html>

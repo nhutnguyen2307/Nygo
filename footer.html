@@ -1,0 +1,187 @@
+<footer class="rectangle-34">
+  <div class="flex-row-a">
+    <div class="rectangle-35"></div>
+
+    <span class="about-us">Về chúng tôi</span>
+
+    <span class="contact">Liên hệ</span>
+
+    <span class="support">Hỗ trợ</span>
+
+    <div class="line"></div>
+
+    <div class="line-36"></div>
+
+    <div class="line-37"></div>
+
+    <span class="introduction">
+      Giới thiệu
+    </span>
+
+    <span class="center-support">
+      Trung tâm hỗ trợ
+    </span>
+
+    <span class="text-28">
+      1900 1234
+    </span>
+
+    <div class="phone"></div>
+  </div>
+
+  <div class="flex-row">
+    <span class="nygo-platform">
+      Nygo - nền tảng kết nối việc làm uy tín,
+      đồng hành cùng bạn trên con đường phát triển sự nghiệp.
+    </span>
+
+    <span class="news">Tin tức</span>
+
+    <span class="user-guide">
+      Hướng dẫn sử dụng
+    </span>
+
+    <div class="mail"></div>
+
+    <span class="support-email">
+      support@workspace.vn
+    </span>
+  </div>
+
+  <div class="flex-row-38">
+    <span class="faq">
+      Câu hỏi thường gặp
+    </span>
+
+    <span class="ho-chi-minh">
+      Tp. Hồ Chí Minh
+    </span>
+  </div>
+
+  <div class="flex-row-c">
+    <span class="recruitment">
+      Tuyển dụng
+    </span>
+
+    <div class="location"></div>
+
+    <div class="yt"></div>
+
+    <div class="fb"></div>
+
+    <div class="ig"></div>
+
+    <div class="in"></div>
+
+    <span class="privacy-policy">
+      Chính sách bảo mật
+    </span>
+
+    <span class="contact-support">
+      Liên hệ hỗ trợ
+    </span>
+
+    <span class="all-rights-reserved">
+      &copy; 2026 Nygo. Tất cả quyền được bảo lưu.
+    </span>
+
+  </div>
+
+</footer>
+
+<!-- MODAL ỨNG TUYỂN (DÙNG CHUNG) -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 border-0 shadow">
+
+            <div class="modal-header border-bottom pb-3">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="img/fpt-logo.png" alt="FPT" class="modal-company-logo">
+                    <div>
+                        <h5 class="modal-title fw-bold mb-0" id="applyModalLabel">Ứng tuyển vị trí</h5>
+                        <p class="text-primary mb-0 small fw-semibold">Senior UX/UI Designer – FPT</p>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+            </div>
+
+            <div class="modal-body p-4" id="modalFormBody">
+                <form id="applyForm" novalidate>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="fullName" class="form-label fw-semibold">Họ và tên <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Nguyễn Văn A" required>
+                            <div class="invalid-feedback">Vui lòng nhập họ và tên.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label fw-semibold">Email <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+                            <div class="invalid-feedback">Vui lòng nhập email hợp lệ.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label fw-semibold">Số điện thoại <span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="0909 xxx xxx" required>
+                            <div class="invalid-feedback">Vui lòng nhập số điện thoại hợp lệ.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="experience" class="form-label fw-semibold">Số năm kinh nghiệm</label>
+                            <select class="form-select" id="experience">
+                                <option value="">-- Chọn --</option>
+                                <option value="1-2">1 – 2 năm</option>
+                                <option value="3-5">3 – 5 năm</option>
+                                <option value="5+">Trên 5 năm</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label fw-semibold">Tải lên CV <span class="text-danger">*</span></label>
+                            <div class="file-drop-zone" id="dropZone">
+                                <input type="file" id="cvFile" accept=".pdf,.doc,.docx" hidden>
+                                <div class="drop-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                <p class="drop-text mb-1">Kéo thả CV vào đây hoặc <button type="button" class="browse-link" id="browseBtn">chọn file</button></p>
+                                <p class="drop-hint mb-0">Chấp nhận: PDF, DOC, DOCX – Tối đa 5MB</p>
+                                <div class="file-preview d-none" id="filePreview">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <span id="fileNameText"></span>
+                                    <button type="button" class="remove-file-btn" id="removeFile" title="Xoá file">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-danger small mt-1" id="fileError" style="display:none;">Vui lòng tải lên file CV.</div>
+                        </div>
+                        <div class="col-12">
+                            <label for="coverLetter" class="form-label fw-semibold">
+                                Thư giới thiệu <span class="text-muted fw-normal small">(không bắt buộc)</span>
+                            </label>
+                            <textarea class="form-control" id="coverLetter" rows="4"
+                                placeholder="Chia sẻ thêm về kinh nghiệm và lý do bạn muốn ứng tuyển..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-end gap-3 mt-4 pt-3 border-top">
+                        <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Huỷ</button>
+                        <button type="submit" class="btn btn-apply rounded-pill px-4" id="btnSubmit">
+                            <span id="btnSubmitText"><i class="fa-solid fa-paper-plane me-2"></i>Nộp đơn ứng tuyển</span>
+                            <span id="btnSubmitLoading" style="display:none;">
+                                <span class="spinner-border spinner-border-sm me-2" role="status"></span>Đang gửi...
+                            </span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- Success State -->
+            <div class="modal-body p-4 text-center" id="modalSuccessBody" style="display:none;">
+                <div class="success-icon mb-3">
+                    <i class="fa-solid fa-circle-check text-success"></i>
+                </div>
+                <h5 class="fw-bold mb-2">Ứng tuyển thành công!</h5>
+                <p class="text-muted mb-4">Hồ sơ của bạn đã được gửi đến <strong>FPT</strong>.<br>Chúng tôi sẽ liên hệ với bạn trong vòng 3–5 ngày làm việc.</p>
+                <button class="btn btn-apply rounded-pill px-4" data-bs-dismiss="modal">Đóng</button>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo ban cuoi.png">
+    <title>Nygo - Nền tảng kết nối việc làm</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Be+Vietnam:wght@400;700&family=Beau+Rivage&family=Inter:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/header.css?v=4" />
+    <link rel="stylesheet" href="css/footer.css?v=4" />
+    <link rel="stylesheet" href="css/style.css?v=4" />
+    <link rel="stylesheet" href="css/chitiettuyendung.css?v=4" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="background-image"></div>
+
+        <div id="header-container"></div>
+
+        <div class="hero-actions">
+            <a href="#" class="btn-primary-gradient">
+                <span class="btn-text">Tìm việc ngay</span>
+                <span class="btn-arrow">→</span>
+            </a>
+            <a href="#" class="btn-outline-blue" data-bs-toggle="modal" data-bs-target="#applyModal">
+                <div class="icon-cv"></div>
+                <span class="btn-text">Nộp CV miễn phí</span>
+            </a>
+        </div>
+
+        <div class="spacer" style="height: 201px;"></div>
+
+        <div class="features-section">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="0">
+                <div class="feature-icon icon-quality"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Việc làm chất lượng</h3>
+                    <p class="feature-desc">Hàng ngàn cơ hội việc làm được tuyển chọn kỹ lưỡng</p>
+                </div>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-icon icon-speed"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Kết nối nhanh chóng</h3>
+                    <p class="feature-desc">Tiếp cận nhà tuyển dụng nhanh và dễ dàng</p>
+                </div>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-icon icon-security"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">An toàn và minh bạch</h3>
+                    <p class="feature-desc">Thông tin rõ ràng, bảo mật đáng tin cậy</p>
+                </div>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-icon icon-support"></div>
+                <div class="feature-content">
+                    <h3 class="feature-title">Hỗ trợ tận tâm</h3>
+                    <p class="feature-desc">Đội ngũ hỗ trợ 24/7 luôn sẵn sàng đồng hành</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-section" data-aos="fade-up">
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+                <div class="stat-icon icon-stat-job"></div>
+                <div class="stat-info">
+                    <span class="stat-number">50.000+</span>
+                    <span class="stat-label">Việc làm hấp dẫn</span>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-icon icon-stat-company"></div>
+                <div class="stat-info">
+                    <span class="stat-number">3.200+</span>
+                    <span class="stat-label">Công ty uy tín</span>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-icon icon-stat-candidate"></div>
+                <div class="stat-info">
+                    <span class="stat-number">8.500+</span>
+                    <span class="stat-label">Ứng viên tin tưởng</span>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-icon icon-stat-satisfaction"></div>
+                <div class="stat-info">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Hài lòng & quay lại</span>
+                </div>
+            </div>
+            <div class="stat-divider"></div>
+
+            <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="stat-icon icon-stat-rating"></div>
+                <div class="stat-info">
+                    <span class="stat-number">5.0/5.0</span>
+                    <span class="stat-label">Đánh giá toàn diện</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- CAROUSEL ĐỐI TÁC / THƯƠNG HIỆU (Bootstrap 5) - Đáp ứng tiêu chí trình chiếu
+        <div class="partner-carousel-section" data-aos="fade-up">
+            <div id="partnerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="partner-slide">
+                            <img src="img/vin-removebg-preview.png" alt="Vingroup" />
+                            <img src="img/petro-removebg-preview.png" alt="Petro" />
+                            <img src="img/sunhouse-removebg-preview.png" alt="Sunhouse" />
+                            <img src="img/1-removebg-preview.png" alt="Đối tác 1" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="partner-slide">
+                            <img src="img/2-removebg-preview.png" alt="Đối tác 2" />
+                            <img src="img/3-removebg-preview.png" alt="Đối tác 3" />
+                            <img src="img/4-removebg-preview.png" alt="Đối tác 4" />
+                            <img src="img/aeon.png" alt="Aeon" />
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="partner-slide">
+                            <img src="img/concung.png" alt="Con Cưng" />
+                            <img src="img/ochigo.png" alt="Ochigo" />
+                            <img src="img/vifon.png" alt="Vifon" />
+                            <img src="img/kinhdo.png" alt="Kinh Đô" />
+                        </div>
+                    </div>
+                </div>
+                Nút điều hướng Slide trái/phải
+                <!- <button class="carousel-control-prev" type="button" data-bs-target="#partnerCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#partnerCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div> --> 
+
+        <div class="cta-section" data-aos="fade-up">
+            <a href="#" class="btn-cta-white" data-bs-toggle="modal" data-bs-target="#applyModal">
+                <span class="cta-text">Nộp CV ngay</span>
+                <span class="cta-arrow">→</span>
+            </a>
+        </div>
+
+        <div id="footer-container"></div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chitiettuyendung.js"></script>
+    <script>
+        async function loadComponent(id, file) {
+            const response = await fetch(file);
+            const data = await response.text();
+            document.getElementById(id).innerHTML = data;
+        }
+        loadComponent("header-container", "header.html");
+        loadComponent("footer-container", "footer.html");
+        
+        // Khởi tạo AOS
+        setTimeout(() => {
+            AOS.init({ duration: 800, once: true });
+        }, 500); // Chờ component load xong
+    </script>
+</body>
+</html>
